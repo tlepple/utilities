@@ -37,7 +37,7 @@ case "$CLOUD_PROVIDER" in
             echo "execute aws code here... "
 #	    . /app/datagen_cloud_env/provider/aws/aws_setup.sh
             echo "calling the log function from utils..."
-            log "testing"
+            log "testing updated module"
             ;;
         azure)
            echo "execute azure code here"
