@@ -35,9 +35,8 @@ CLOUD_PROVIDER=$1
 case "$CLOUD_PROVIDER" in
         aws)
             echo "execute aws code here... "
-#	    . /app/datagen_cloud_env/provider/aws/aws_setup.sh
-            echo "calling the log function from utils..."
-            log "testing updated module"
+	    . ${STARTING_DIR}/bin/provider/aws/setup.sh
+            log "calling the aws setup.sh script"
             ;;
         azure)
            echo "execute azure code here"
